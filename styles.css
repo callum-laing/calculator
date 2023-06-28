@@ -13,7 +13,7 @@ body {
     justify-content: center;
     padding: 10px;
     margin-top: 50px;
-    height: 50vh;
+    height: 75vh;
     min-height: 500px;
 }
 
@@ -28,7 +28,7 @@ body {
 .display {
     text-align: right;
     padding: 10px 20px;
-    border: 2px solid red;
+    border: 2px solid;
     border-radius: 5px;
     margin-bottom: 20px;
     word-wrap: break-word;
@@ -41,6 +41,7 @@ body {
     border-radius: 5px;
     background-color: white;
     border: 2px solid black;
+    font-size: 1.5rem;
 }
 
 .btn:hover {
@@ -53,8 +54,8 @@ body {
     grid-gap: 10px;
 }
 
-.span-2 {
-    grid-column: span 2;
+.span-4 {
+    grid-column: span 4;
 }
 
 .result {
