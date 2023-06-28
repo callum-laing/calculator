@@ -1,19 +1,36 @@
-//function for addition
-let addNumbers = (num1, num2) => {
-  return num1 + num2;
+let firstOperand = "";
+let secondOperand = "";
+let currentOperation = "";
+
+let add = (a, b) => {
+  return a + b;
 };
 
-//function for subtraction
-let subNumbers = (num1, num2) => {
-  return num1 - num2;
+let subtract = (a, b) => {
+  return a - b;
 };
 
-//function for multiplicaion
-let multiplyNumbers = (num1, num2) => {
-  return num1 * num2;
+let multiply = (a, b) => {
+  return a * b;
 };
 
-//function for division
-let divideNumbers = (num1, num2) => {
-  return num1 / num2;
+let divide = (a, b) => {
+  return a / b;
 };
+
+function operate(operator, num1, num2) {
+  switch (operator) {
+    case "+":
+      return add(num1, num2);
+      break;
+    case "-":
+      return subtract(num1, num2);
+      break;
+    case "*":
+      return multiply(num1, num2);
+      break;
+    case "/":
+      return divide(num1, num2);
+      break;
+  }
+}
