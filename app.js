@@ -73,6 +73,67 @@ function clearCalculator() {
   render();
 }
 
+window.addEventListener("keyup", (e) => {
+  console.log(e.key);
+
+  switch (e.key) {
+    case "9":
+      insertNumber(9);
+      break;
+    case "8":
+      insertNumber(8);
+      break;
+    case "7":
+      insertNumber(7);
+      break;
+    case "6":
+      insertNumber(6);
+      break;
+    case "5":
+      insertNumber(5);
+      break;
+    case "4":
+      insertNumber(4);
+      break;
+    case "3":
+      insertNumber(3);
+      break;
+    case "2":
+      insertNumber(2);
+      break;
+    case "1":
+      insertNumber(1);
+      break;
+    case "0":
+      insertNumber(0);
+      break;
+    case ".":
+      insertDot();
+      break;
+    case "=":
+      insertEqual();
+      break;
+    case "Enter":
+      insertEqual();
+      break;
+    case "Delete":
+      clearCalculator();
+      break;
+    case "/":
+      insertOperation("/");
+      break;
+    case "*":
+      insertOperation("*");
+      break;
+    case "-":
+      insertOperation("-");
+      break;
+    case "+":
+      insertOperation("+");
+      break;
+  }
+});
+
 function render() {
   if (firstOperand !== null) {
     document.querySelector("#result").innerHTML =
