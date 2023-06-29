@@ -58,12 +58,12 @@ body {
     grid-column: span 4;
 }
 
-.result {
+#result {
     min-height: 30px;
     font-size: 20px;
 }
 
-.input {
+#input {
     min-height: 60px;
     font-size: 40px;
 }
